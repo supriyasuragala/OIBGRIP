@@ -1,83 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Temperature Conversion</title>
-<style type="text/css">
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 18px;
-}
-body{
-    background-image:url("Assects/Image/tem.jfif");
-}
-.wrapper{
-    width: 450px;
-    background-color: gainsboro;
-    padding: 70px 40px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    box-shadow: 0 20px 25px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.container{
-    width: 45%;
-}
-input{
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: 2px solid #d2d2d2;
-    outline: none;
-    margin-top: 8px;
-    padding: 0 10px;
-}
-input:focus{
-    border-color: rgb(25, 0, 255);
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LandingPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+ rel="stylesheet" integrity="sha384- 
+  EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+   crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+ integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+  crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+   crossorigin="anonymous">
+   </script>
+</head>
 <body>
-<div class="wrapper">
-<div class="container">
-<label for="celsius">Celsius</label>
-<input type="number" id="celsius" oninput= "celToFar()">
-</div>
-<div class="container">
-<label for="fahrenheit">Fahrenheit</label>
-<input type="number" id="fahrenheit" oninput = "farToCel()">
-</div>
-<div class="container">
-<label for="kelvin">Kelvin</label>
-<input type="number" id="kelvin" oninput = "function()"></div>
-<script>
-let celsius = document.getElementById('celsius');
-let fahrenheit = document.getElementById('fahrenheit');
-let kelvin = document.getElementById('kelvin');
-celsius.oninput = function () {
-let f = (parseFloat(celsius.value) * 9) / 5 + 32;
-fahrenheit.value = parseFloat(f.toFixed(2));
-let k = (parseFloat(celsius.value) + 273.15);
-kelvin.value = parseFloat(k.toFixed(2));
-}
-fahrenheit.oninput = function () {
-let c = ((parseFloat(
-fahrenheit.value) - 32) * 5) / 9;
-celsius.value = parseFloat(c.toFixed(2));
-let k = (parseFloat(fahrenheit.value) - 32) * 5 / 9 + 273.15;
-kelvin.value = parseFloat(k.toFixed(2));
-}
-kelvin.oninput = function () {
-let f = (parseFloat(kelvin.value) - 273.15) * 9 / 5 + 32;
-fahrenheit.value = parseFloat(f.toFixed(2));
-let c = (parseFloat(kelvin.value) - 273.15);
-celsius.value = parseFloat(c.toFixed(2));
-}
-</script>
+    <!-- header start -->
+    <!-- <header end -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Apple Watch</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs- 
+           target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria- 
+            expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#whychoose">WhyChoose</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+              </li>
+                </a>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="About Us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Smart Digital Watch For Luxurious Life</h1>
+                    <p>Apple watch SE (GPS+Cellular , 40mm) - Space Grey Aluminium Case with Midnight Sport Brand - Regular </p>
+                      <a href="https://amzn.eu/d/iDjw2GC" target="_blank" class="btn btn-danger">Buy Product</a>
+                </div>
+                <div class="col-md-6">
+                <img src="/assects/Images/product-jpeg-500x500.webp" alt="" srcset="" 
+                 style="width: 30% !important">
+                
+<img src="/assects/Images/Apple.jpg" alt="" srcset="" 
+                 style="width: 50% !important">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+    </div>
+     <div id="whychoose" class="back-pink px-5 mb-5" style="padding: 40px !important">
+      <div class="container">
+        <h2 class="text-center mb-3">Why Choose</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width:18rem;">
+              <div class="card-body">
+                <img src="/assects/Images/health.jpeg" alt="" srcset="" style="width:100px  !important">
+                <h5 class="card-title">Health</h5>
+                <p>Get heart rate notications.Track your sleep.quickly call for help in the an emergency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width:18rem;">
+              <div class="card-body">
+                <img src="/assects/Images/Fitness.jpeg" alt="" srcset="" style="width: 
+                90px  !important">
+                <h5 class="card-title">Fitness</h5>
+                <p>Track all your daily activity.Precisely measure your favourite workouts</p><br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width:18rem;">
+              <div class="card-body">
+                <img src="/assects/Images/Connectivity.jpeg" alt="" srcset="" 
+                style="width: 100px  !important">
+                <h5 class="card-title">Connectivity</h5>
+                <p>Get calls and texts. Listen to music User siri.All right from your wrist</p><br></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width:18rem;">
+              <div class="card-body">
+                <img src="/assects/Images/Personalization.jpeg" alt="" srcset="" 
+style="width: 90px  !important">
+                <h5 class="card-title">Personalisation</h5>
+                <p>Add a new strap to change up your look. Discover, Customise and share watch faces</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="product">
+      <div class="container">
+          <div class="row">
+                <div class="col-md-6 text-center">
+                  <img src="/assects/Images/Digital.png" alt="" srcset="" style="width: 40%  !important">
+                </div>
+                <div class="col-md-6">
+          <h1>Apple Smart watch</h1>
+                    <p>Compatible Devices: Smartphone; Included Components: Apple Watch, Band, 1m Magnetic Charging Cable</p>
+                       <h5>Brand	Apple</h5>
+                        <h5>Model Name  Watch SE</h5>
+                        <h5>Style  GPS+Cellular</h5>
+                        <h5>Colour Space Grey Aluminium  Case with Midnight sport band</h5>
+                        <h5>Screen Size 40 milimeters</h5>
+                </div>
+          </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  <div id="Features"  class="card text-center">
+    <div class="card text-center">
+           <div class="card-body">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Supriya
+           All Rights Reserved</p>
+      </div>
+      </div>
+    </div>
 </body>
 </html>
